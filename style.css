@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark--cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.contanier {
+    height: 100vh;
+    margin: 5%;
+}
+
+.card {
+    margin: 10%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.orange {
+    height: auto;
+    background-color: var(--Bright-orange);
+    padding: 5% 5%;
+    padding-right: 3.5%;
+    width: 33.33%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.orange-content img {
+    margin-bottom: 20px;
+    margin-left: 9px;
+}
+
+.orange-content h2 {
+    padding: 5% 6%;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.orange-content p {
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    padding: 5% 6%;
+    font-size: 16px;
+}
+
+.orange-btn {
+    background-color: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 4%;
+    text-transform: capitalize;
+    color: var(--Bright-orange);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    width: 130px;
+    border: 1px solid white;
+    margin-top: 35%;
+    margin-bottom: -10%;
+    margin-left: 3%;
+}
+
+.oil {
+    height: auto;
+    background-color: var(--Dark--cyan);
+    padding: 5% 3%;
+    padding-right: 3.5%;
+    width: 33.33%;
+}
+
+.oil-content img {
+    margin-bottom: 20px;
+    margin-left: 9px;
+}
+
+.oil-content h2 {
+    padding: 5% 6%;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.oil-content p {
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    padding: 5% 6%;
+}
+
+.oil-btn {
+    background-color: white;
+    padding: 4%;
+    text-transform: capitalize;
+    color: var(--Dark--cyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    width: 130px;
+    border: 1px solid white;
+    margin-top: 40%;
+    margin-bottom: -10%;
+    margin-left: 3%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.green {
+    height: auto;
+    background-color: var(--Very-dark-cyan);
+    padding: 5% 3%;
+    padding-right: 3.5%;
+    width: 33.33%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.green-content img {
+    margin-bottom: 20px;
+    margin-left: 9px;
+}
+
+.green-content h2 {
+    padding: 5% 6%;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.green-content p {
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    padding: 5% 6%;
+}
+
+.green-btn {
+    background-color: white;
+    padding: 4%;
+    text-transform: capitalize;
+    color: var(--Very-dark-cyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    width: 130px;
+    border: 1px solid white;
+    margin-top: 31%;
+    margin-bottom: 0%;
+    margin-left: 3%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .orange {
+        height: auto;
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 15% 15%;
+    }
+    .orange-content p {
+        font-size: 20px;
+    }
+    .orange-btn {
+        font-size: 19px;
+        padding: 10px;
+    }
+    .oil {
+        width: 100%;
+        padding: 15% 15%;
+    }
+    .oil-content p {
+        font-size: 20px;
+    }
+    .oil-btn {
+        font-size: 19px;
+        padding: 10px;
+    }
+    .green {
+        padding: 15% 15%;
+        width: 100%;
+    }
+    .green-content p {
+        font-size: 20px;
+    }
+    .green-btn {
+        font-size: 19px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .orange {
+        height: auto;
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 20% 10%;
+    }
+    .oil {
+        width: 100%;
+        padding: 20% 10%;
+    }
+    .green {
+        padding: 20% 10%;
+        width: 100%;
+    }
+}
